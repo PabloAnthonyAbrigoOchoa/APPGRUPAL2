@@ -1,0 +1,8 @@
+<resources>>
+    <string name="app_name">App Grupal - 2</string>
+    <string-array name="Opciones">
+        <item>Seleccionar</item>
+        <item>Farenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+</resources>
