@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtTituloNombres"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:text="Grupal 2 - Pablo Abrigo, Brayan Chamico"
+            android:textAlignment="center"
+            android:textColor="#010209"/>
+
+        <TextView
+            android:id="@+id/textWiewIndicaciones"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Conversión de Grados"
+            android:textAlignment="center"
+            android:textColor="#AC1C16"/>
+
+        <TextView
+            android:id="@+id/textViewIndicaciones2"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="Ingrese los Grados Centigrados que desea convertir: "
+            android:textAlignment="center"
+            android:textColor="#090B87"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextValor"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Valor" />
+
+            <Spinner
+                android:id="@+id/spnOpciones"
+                android:layout_width="94dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:entries="@array/Opciones" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConvertir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Convertir"
+            android:backgroundTint="#AC1C16"/>
+
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="El Resultado es: "
+            android:textAlignment="center"
+            android:textColor="#AC1C16" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
